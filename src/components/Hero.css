@@ -1,0 +1,696 @@
+/* =========================================
+   HERO SECTION
+========================================= */
+
+.hero {
+  /* min-height: 0vh; */
+
+  display: flex;
+  align-items: center;
+
+  padding: 120px 30px 80px;
+
+  position: relative;
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 8% 20%,
+      rgba(190, 240, 226, 0.35),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 92% 25%,
+      rgba(205, 230, 255, 0.45),
+      transparent 30%
+    ),
+    #f7fbfc;
+}
+
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.hero-container {
+  width: 100%;
+  max-width: 1150px;
+
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+
+  align-items: center;
+
+  gap: 70px;
+}
+
+
+/* =========================================
+   HERO CONTENT
+========================================= */
+
+.hero-content {
+  max-width: 650px;
+}
+
+
+/* =========================================
+   BADGE
+========================================= */
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+
+  padding: 8px 14px;
+
+  border-radius: 30px;
+
+  background: rgba(255, 255, 255, 0.7);
+
+  border: 1px solid rgba(32, 183, 107, 0.18);
+
+  color: #5f7078;
+
+  font-size: 13px;
+  font-weight: 500;
+
+  margin-bottom: 22px;
+
+  backdrop-filter: blur(8px);
+}
+
+
+.badge-dot {
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: #20b76b;
+
+  box-shadow: 0 0 0 4px rgba(32, 183, 107, 0.1);
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.hero-content h1 {
+  margin: 0;
+
+  color: #263238;
+
+  font-size: clamp(46px, 6vw, 72px);
+
+  line-height: 1.05;
+
+  font-weight: 700;
+
+  letter-spacing: -2.5px;
+}
+
+
+.hero-content h1 span {
+  color: #20b76b;
+}
+
+
+/* =========================================
+   SUB HEADING
+========================================= */
+
+.hero-content h2 {
+  margin: 18px 0 20px;
+
+  color: #52636b;
+
+  font-size: clamp(25px, 3vw, 36px);
+
+  line-height: 1.2;
+
+  font-weight: 600;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.hero-description {
+  max-width: 610px;
+
+  margin: 0;
+
+  color: #697981;
+
+  font-size: 16px;
+
+  line-height: 1.8;
+
+  font-weight: 400;
+}
+
+
+/* =========================================
+   TECHNOLOGY TAGS
+========================================= */
+
+.tech-tags {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 9px;
+
+  margin-top: 25px;
+}
+
+
+.tech-tags span {
+  padding: 8px 13px;
+
+  border: 1px solid rgba(32, 183, 107, 0.18);
+
+  border-radius: 8px;
+
+  background: rgba(255, 255, 255, 0.6);
+
+  color: #617078;
+
+  font-size: 13px;
+
+  transition: all 0.3s ease;
+}
+
+
+.tech-tags span:hover {
+  border-color: #20b76b;
+
+  color: #20a965;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.hero-buttons {
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  margin-top: 30px;
+}
+
+
+.primary-btn,
+.secondary-btn {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 10px;
+
+  padding: 13px 22px;
+
+  border-radius: 9px;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  transition: all 0.3s ease;
+}
+
+
+/* Primary */
+
+.primary-btn {
+  background: #20b76b;
+
+  color: white;
+
+  box-shadow:
+    0 8px 20px rgba(32, 183, 107, 0.18);
+}
+
+
+.primary-btn:hover {
+  background: #179c5a;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 12px 25px rgba(32, 183, 107, 0.25);
+}
+
+
+/* Secondary */
+
+.secondary-btn {
+  background: rgba(255, 255, 255, 0.65);
+
+  color: #52636b;
+
+  border: 1px solid rgba(32, 183, 107, 0.25);
+}
+
+
+.secondary-btn:hover {
+  border-color: #20b76b;
+
+  color: #20a965;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================
+   SOCIAL LINKS
+========================================= */
+
+.social-links {
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  margin-top: 28px;
+}
+
+
+.social-links a {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 9px;
+
+  background: rgba(255, 255, 255, 0.7);
+
+  border: 1px solid #e2ecee;
+
+  color: #586970;
+
+  transition: all 0.3s ease;
+}
+
+
+.social-links a:hover {
+  color: #20b76b;
+
+  border-color: rgba(32, 183, 107, 0.35);
+
+  transform: translateY(-3px);
+}
+
+
+/* =========================================
+   RIGHT VISUAL
+========================================= */
+
+.hero-visual {
+  position: relative;
+
+  min-height: 430px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+
+/* =========================================
+   CODE CARD
+========================================= */
+
+.visual-card {
+  width: 440px;
+
+  background: rgba(255, 255, 255, 0.82);
+
+  border: 1px solid rgba(255, 255, 255, 0.95);
+
+  border-radius: 18px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 25px 60px rgba(66, 96, 105, 0.12);
+
+  backdrop-filter: blur(12px);
+
+  transform: rotate(1deg);
+
+  transition: transform 0.4s ease;
+}
+
+
+.visual-card:hover {
+  transform: rotate(0deg) translateY(-5px);
+}
+
+
+/* =========================================
+   CARD TOP
+========================================= */
+
+.card-top {
+  height: 48px;
+
+  display: flex;
+
+  align-items: center;
+
+  padding: 0 17px;
+
+  border-bottom: 1px solid #edf1f2;
+
+  background: rgba(248, 251, 252, 0.9);
+}
+
+
+.window-dots {
+  display: flex;
+
+  gap: 6px;
+}
+
+
+.window-dots span {
+  width: 8px;
+  height: 8px;
+
+  border-radius: 50%;
+
+  background: #cbd5d8;
+}
+
+
+.card-title {
+  margin-left: 15px;
+
+  font-size: 12px;
+
+  color: #829097;
+
+  font-family: monospace;
+}
+
+
+/* =========================================
+   CODE CONTENT
+========================================= */
+
+.code-content {
+  padding: 28px;
+
+  font-family: "Courier New", monospace;
+
+  font-size: 13px;
+
+  line-height: 2;
+
+  color: #596970;
+}
+
+
+.code-content p {
+  margin: 0;
+}
+
+
+.indent {
+  padding-left: 25px;
+}
+
+
+.code-purple {
+  color: #8b5cf6;
+}
+
+
+.code-blue {
+  color: #3182ce;
+}
+
+
+.code-key {
+  color: #64748b;
+}
+
+
+.code-green {
+  color: #20a965;
+}
+
+
+/* =========================================
+   CURSOR
+========================================= */
+
+.code-cursor {
+  display: inline-block;
+
+  width: 7px;
+  height: 15px;
+
+  background: #20b76b;
+
+  margin-top: 4px;
+
+  animation: blink 1s infinite;
+}
+
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+
+/* =========================================
+   FLOATING CARDS
+========================================= */
+
+.floating-card {
+  position: absolute;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 12px 15px;
+
+  background: rgba(255, 255, 255, 0.9);
+
+  border: 1px solid rgba(255, 255, 255, 0.9);
+
+  border-radius: 12px;
+
+  box-shadow:
+    0 12px 30px rgba(70, 100, 110, 0.1);
+
+  backdrop-filter: blur(10px);
+
+  animation: floating 4s ease-in-out infinite;
+}
+
+
+.floating-card strong {
+  display: block;
+
+  color: #45565e;
+
+  font-size: 12px;
+}
+
+
+.floating-card small {
+  display: block;
+
+  margin-top: 3px;
+
+  color: #8a989e;
+
+  font-size: 10px;
+}
+
+
+.floating-icon {
+  width: 32px;
+  height: 32px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 8px;
+
+  background: #eaf9f1;
+
+  color: #20b76b;
+
+  font-size: 15px;
+}
+
+
+.floating-card-one {
+  left: -20px;
+
+  top: 70px;
+}
+
+
+.floating-card-two {
+  right: -20px;
+
+  bottom: 65px;
+
+  animation-delay: 1.5s;
+}
+
+
+@keyframes floating {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1000px) {
+
+  .hero-container {
+    grid-template-columns: 1fr;
+
+    gap: 60px;
+
+    text-align: center;
+  }
+
+
+  .hero-content {
+    max-width: 700px;
+
+    margin: auto;
+  }
+
+
+  .hero-description {
+    margin: auto;
+  }
+
+
+  .tech-tags,
+  .hero-buttons,
+  .social-links {
+    justify-content: center;
+  }
+
+
+  .hero-visual {
+    min-height: 400px;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .hero {
+    padding: 110px 20px 60px;
+  }
+
+
+  .hero-content h1 {
+    font-size: 44px;
+
+    letter-spacing: -1.5px;
+  }
+
+
+  .hero-content h2 {
+    font-size: 25px;
+  }
+
+
+  .hero-description {
+    font-size: 14px;
+  }
+
+
+  .tech-tags span {
+    font-size: 12px;
+
+    padding: 7px 10px;
+  }
+
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+
+  .primary-btn,
+  .secondary-btn {
+    width: 100%;
+
+    max-width: 250px;
+  }
+
+
+  .visual-card {
+    width: 100%;
+
+    transform: none;
+  }
+
+
+  .floating-card {
+    display: none;
+  }
+
+
+  .code-content {
+    padding: 20px;
+
+    font-size: 11px;
+  }
+
+}
+
