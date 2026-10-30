@@ -6,7 +6,7 @@ import {
   ArrowUpRight,
 } from "lucide-react";
 import "./About.css";
-import profImg from "../assets/sandra-profile.jpg";
+import profImg from "../assets/sandra-profile2.jpeg";
 
 function About() {
   return (
